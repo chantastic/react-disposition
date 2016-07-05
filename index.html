@@ -11,19 +11,33 @@
     <div id="root"></div>
 
     <script type="text/babel">
-      var Absolute = ReactBlox.Absolute;
       var Block = ReactBlox.Block;
+      var Flex = ReactBlox.Flex;
+      var Inline = ReactBlox.Inline;
+      var InlineBlock = ReactBlox.InlineBlock;
+      var InlineFlex = ReactBlox.InlineFlex;
+
+      var Absolute = ReactBlox.Absolute;
       var Fixed = ReactBlox.Fixed;
       var Relative = ReactBlox.Relative;
 
       ReactDOM.render(
         <div>
-          <Block>Hi, this is a Block.</Block>
+          <section>
+            <h2>Display</h2>
+            <Block>This is a Block.</Block>
+            <Inline>This is an Inline.</Inline>
+            <InlineBlock>This is an InlineBlock.</InlineBlock>
+            <Flex>This is an Flex.</Flex>
+            <InlineFlex>This is an InlineFlex.</InlineFlex>
+          </section>
 
           <section>
             <h2>Position</h2>
-            <Fixed>Hi, this is a Fixed.</Fixed>
-            <Relative><Absolute>Absolute</Absolute></Relative>
+            <Fixed>This is a Fixed.</Fixed>
+            <Relative>
+              <Absolute>This is an Absolute</Absolute>
+            </Relative>
           </section>
         </div>,
         document.getElementById("root")

@@ -1,0 +1,13 @@
+{
+  "name": "react-blox",
+  "version": "0.0.1",
+  "description": "Reusable, transportable, basic React layout components",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Chan",
+  "license": "MIT"
+}

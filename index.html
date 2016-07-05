@@ -11,10 +11,21 @@
     <div id="root"></div>
 
     <script type="text/babel">
+      var Absolute = ReactBlox.Absolute;
       var Block = ReactBlox.Block;
+      var Fixed = ReactBlox.Fixed;
+      var Relative = ReactBlox.Relative;
 
       ReactDOM.render(
-        <Block style={{ color: "blue", display: "inline" }}>Hi, this is a Block.</Block>,
+        <div>
+          <Block>Hi, this is a Block.</Block>
+
+          <section>
+            <h2>Position</h2>
+            <Fixed>Hi, this is a Fixed.</Fixed>
+            <Relative><Absolute>Absolute</Absolute></Relative>
+          </section>
+        </div>,
         document.getElementById("root")
       )
     </script>

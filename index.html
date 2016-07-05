@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html>
+  <head>
+    <script src="https://fb.me/react-15.2.0.js"></script>
+    <script src="https://fb.me/react-dom-15.2.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="./browser-bundle.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var Block = ReactBlox.Block;
+
+      ReactDOM.render(
+        <Block style={{ color: "blue", display: "inline" }}>Hi, this is a Block.</Block>,
+        document.getElementById("root")
+      )
+    </script>
+  </body>
+</html>

@@ -1,10 +1,13 @@
 module.exports = {
+    externals: {
+        "react": "React",
+    },
     entry: "./index.js",
     output: {
         library: "ReactBlox",
         libraryTarget: "umd",
-        path: __dirname,
-        filename: "browser-bundle.js"
+        path: __dirname + "/dist",
+        filename: "ReactBlox.js"
     },
     module: {
       loaders: [

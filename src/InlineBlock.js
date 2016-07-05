@@ -1,3 +1,5 @@
+import React from "react"
+
 const elementStyles = applied => ({
   display: "inline-block",
   ...applied,

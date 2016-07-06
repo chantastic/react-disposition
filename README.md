@@ -5,7 +5,7 @@ Reusable, transportable, display and position React components.
 ## Don't use this
 
 There's not a compelling reason why you should use this.
-[https://github.com/petehunt/jsxstyle](jsxstyle) is a more comprehensive
+[jsxstyle](https://github.com/petehunt/jsxstyle) is a more comprehensive
 library that overlaps this feature-set completely.
 
 I want something that takes a less shot-gun approach for display/position

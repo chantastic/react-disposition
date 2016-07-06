@@ -2,7 +2,7 @@
   "name": "react-disposition",
   "version": "0.0.1",
   "description": "Reusable, transportable, basic React layout components",
-  "main": "index.js",
+  "main": "lib/index.js",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.10.4",

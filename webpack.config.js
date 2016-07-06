@@ -4,10 +4,10 @@ module.exports = {
     },
     entry: "./index.js",
     output: {
-        library: "ReactBlox",
+        library: "ReactDisposition",
         libraryTarget: "umd",
         path: __dirname + "/dist",
-        filename: "ReactBlox.js"
+        filename: "ReactDisposition.js"
     },
     module: {
       loaders: [

@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["React"], factory);
 	else if(typeof exports === 'object')
-		exports["ReactBlox"] = factory(require("React"));
+		exports["ReactDisposition"] = factory(require("React"));
 	else
-		root["ReactBlox"] = factory(root["React"]);
+		root["ReactDisposition"] = factory(root["React"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -262,19 +262,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-	var elementStyles = function elementStyles(applied) {
+	var elementStyles = function elementStyles(applied, positions) {
 	  return _extends({
 	    position: "absolute"
-	  }, applied);
+	  }, positions, applied);
 	};
 
 	var Absolute = function Absolute(_ref) {
 	  var style = _ref.style;
+	  var top = _ref.top;
+	  var right = _ref.right;
+	  var bottom = _ref.bottom;
+	  var left = _ref.left;
 
-	  var props = _objectWithoutProperties(_ref, ["style"]);
+	  var props = _objectWithoutProperties(_ref, ["style", "top", "right", "bottom", "left"]);
 
 	  return _react2.default.createElement("div", _extends({}, props, {
-	    style: elementStyles(style)
+	    style: elementStyles(style, { top: top, right: right, bottom: bottom, left: left })
 	  }));
 	};
 
@@ -296,19 +300,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-	var elementStyles = function elementStyles(applied) {
+	var elementStyles = function elementStyles(applied, positions) {
 	  return _extends({
 	    position: "fixed"
-	  }, applied);
+	  }, positions, applied);
 	};
 
 	var Fixed = function Fixed(_ref) {
 	  var style = _ref.style;
+	  var top = _ref.top;
+	  var right = _ref.right;
+	  var bottom = _ref.bottom;
+	  var left = _ref.left;
 
-	  var props = _objectWithoutProperties(_ref, ["style"]);
+	  var props = _objectWithoutProperties(_ref, ["style", "top", "right", "bottom", "left"]);
 
 	  return _react2.default.createElement("div", _extends({}, props, {
-	    style: elementStyles(style)
+	    style: elementStyles(style, { top: top, right: right, bottom: bottom, left: left })
 	  }));
 	};
 
@@ -330,19 +338,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-	var elementStyles = function elementStyles(applied) {
+	var elementStyles = function elementStyles(applied, positions) {
 	  return _extends({
 	    position: "relative"
-	  }, applied);
+	  }, positions, applied);
 	};
 
 	var Relative = function Relative(_ref) {
 	  var style = _ref.style;
+	  var top = _ref.top;
+	  var right = _ref.right;
+	  var bottom = _ref.bottom;
+	  var left = _ref.left;
 
-	  var props = _objectWithoutProperties(_ref, ["style"]);
+	  var props = _objectWithoutProperties(_ref, ["style", "top", "right", "bottom", "left"]);
 
 	  return _react2.default.createElement("div", _extends({}, props, {
-	    style: elementStyles(style)
+	    style: elementStyles(style, { top: top, right: right, bottom: bottom, left: left })
 	  }));
 	};
 

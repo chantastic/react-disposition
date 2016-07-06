@@ -1,7 +1,7 @@
 {
   "name": "react-disposition",
   "version": "0.0.1",
-  "description": "Reusable, transportable, basic React layout components",
+  "description": "Reusable, transportable, display and position React components.",
   "main": "lib/index.js",
   "dependencies": {},
   "devDependencies": {
